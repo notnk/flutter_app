@@ -4,11 +4,10 @@ import 'package:newtest/pages/login.dart';
 import 'pages/home.dart';
 
 void main() {
-  runApp(TestApp());
+  runApp(const TestApp());
 }
 class TestApp extends StatelessWidget {
   const TestApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,11 +22,9 @@ class TestApp extends StatelessWidget {
       ),
       initialRoute: '/login',
       routes: {
-        '/' : (context)=> Home(),
-        '/login' :(context)=>Login(),
+        '/' : (context)=> const Home(),
+        '/login' :(context)=>const Login(),
       },
     );
   }
 }
-
-
