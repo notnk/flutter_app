@@ -1,22 +1,33 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:newtest/pages/login.dart';
 import 'pages/home.dart';
 
-void main(){
-    runApp(MaterialApp(
-      //home: Home(),
+void main() {
+  runApp(TestApp());
+}
+class TestApp extends StatelessWidget {
+  const TestApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       themeMode: ThemeMode.light,
       theme: ThemeData(
-        primarySwatch: Colors.indigo
+        primarySwatch: Colors.indigo,
+        fontFamily: GoogleFonts.lato().fontFamily,
+        //fontFamily: GoogleFonts.latoTextTheme(),
       ),
       darkTheme: ThemeData(
         brightness: Brightness.light,
       ),
-      initialRoute: '/',
+      initialRoute: '/login',
       routes: {
         '/' : (context)=> Home(),
         '/login' :(context)=>Login(),
       },
-  ),
-  );
+    );
+  }
 }
+
+
