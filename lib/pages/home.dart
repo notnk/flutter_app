@@ -4,16 +4,16 @@ class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
   final int days= 40;
   @override
-  Widget build(BuildContext context) {
+  Widget   build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('title'),
+        title: const Text('title'),
         centerTitle: true,
       ),
       drawer: Drawer(),
       body: Center(
         child: Container(
-          child: Text("this is a $days"),
+          child: Text("this is outputing the no of  $days"),
         ),
       ),
     );
