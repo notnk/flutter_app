@@ -10,7 +10,7 @@ class Home extends StatelessWidget {
         title: const Text('title'),
         centerTitle: true,
       ),
-      drawer: const Drawer(),
+      //drawer: const Drawer(),
       body: Center(
         child: Container(
           child: Text("this is outputting the no of  $days"),
