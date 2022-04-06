@@ -22,7 +22,7 @@ class TestApp extends StatelessWidget {
       darkTheme: ThemeData(
         brightness: Brightness.light,
       ),
-      initialRoute: MyRoutes.loginroute,
+      initialRoute: MyRoutes.homeroute,
       routes: {
         MyRoutes.homeroute : (context)=> const Home(),
         MyRoutes.loginroute :(context)=>const Login(),
