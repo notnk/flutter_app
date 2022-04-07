@@ -8,7 +8,9 @@ class Home extends StatelessWidget {
   Widget   build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('title'),
+        elevation: 0,
+        iconTheme: const IconThemeData(color: Colors.black),
+        title: const Text('Catalog'),
         centerTitle: true,
       ),
       //drawer: const Drawer(),

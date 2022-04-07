@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:newtest/utils/routes.dart';
 
@@ -13,7 +12,10 @@ class MyDrawer extends StatelessWidget {
         child: ListView(
           padding: EdgeInsets.zero,
           children:  [
-            const DrawerHeader(
+             const DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.deepPurple,
+              ),
               padding: EdgeInsets.zero,
                 child: UserAccountsDrawerHeader(
                   accountEmail: Text('asdasd@gmail.com'),
