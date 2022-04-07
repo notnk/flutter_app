@@ -8,19 +8,21 @@ class MyDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Drawer(
       child: Container(
-        color: Colors.deepPurple,
+        color: Colors.blue,
         child: ListView(
           padding: EdgeInsets.zero,
           children:  [
              const DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.deepPurple,
+                color: Colors.blue,
               ),
               padding: EdgeInsets.zero,
                 child: UserAccountsDrawerHeader(
                   accountEmail: Text('asdasd@gmail.com'),
                   accountName: Text('Steven Hawk'),
-                  currentAccountPicture: CircleAvatar(backgroundImage: NetworkImage(''),),
+                  currentAccountPicture: CircleAvatar(backgroundImage: NetworkImage(''),
+                  radius: 20,
+                  ),
                 ),
             ),
             const ListTile(
