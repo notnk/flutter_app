@@ -12,7 +12,7 @@ class ItemWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(16.0),
       child: Card(
-        shape: StadiumBorder(),
+        shape: const StadiumBorder(),
         child: ListTile(
           onTap: (){
             print( '${item.name} was pressed');
