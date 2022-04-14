@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:newtest/pages/cart_page.dart';
 import 'package:newtest/pages/login.dart';
 import 'package:newtest/utils/routes.dart';
 import 'package:newtest/widgets/theme.dart';
@@ -14,13 +15,14 @@ class TestApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.dark,
       theme: MyTheme.light(context),
       darkTheme: MyTheme.dark(context),
       initialRoute: MyRoutes.homeroute,
       routes: {
-        MyRoutes.homeroute : (context)=>  Home(),
+        MyRoutes.homeroute : (context)=>  const Home(),
         MyRoutes.loginroute :(context)=>const Login(),
+        MyRoutes.cartRoute :(context)=>const CartPage(),
       },
     );
   }
