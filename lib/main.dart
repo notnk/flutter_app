@@ -15,7 +15,7 @@ class TestApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      themeMode: ThemeMode.dark,
+      themeMode: ThemeMode.light,
       theme: MyTheme.light(context),
       darkTheme: MyTheme.dark(context),
       initialRoute: MyRoutes.homeroute,

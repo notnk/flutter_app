@@ -12,7 +12,7 @@ class HomeDetailPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
-        iconTheme:const IconThemeData(color: Colors.white)
+        iconTheme:const IconThemeData(color: Colors.black)
       ),
       bottomNavigationBar: ButtonBar(
           alignment: MainAxisAlignment.spaceBetween,
@@ -29,7 +29,7 @@ class HomeDetailPage extends StatelessWidget {
             ).wh(120,50),
           ],
         ).p32(),
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.brown[50],
       body: SafeArea(
         bottom: false,
         child: Column(
