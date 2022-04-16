@@ -51,14 +51,14 @@ class CatalogItem extends StatelessWidget {
                 children: [
                   catalog.name.text.lg.color(Colors.purpleAccent).bold.make(),
                   catalog.desc.text.make(),
-                  10.heightBox,
+                  12.heightBox,
                   ButtonBar(
                     alignment: MainAxisAlignment.spaceBetween,
-                    buttonPadding: Vx.mH8,
+                    buttonPadding: Vx.mH0,
                     children: [
-                      '\$${catalog.price}'.text.make(),
+                      '\$${catalog.price}'.text.xl.make(),
                     ],
-                  ).pOnly(right: 8),
+                  ).pOnly(right: 12),
                    AddToCart(catalog: catalog),
                 ],
               ),

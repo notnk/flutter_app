@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:newtest/core/store.dart';
 import 'package:newtest/pages/cart_page.dart';
 import 'package:newtest/pages/login.dart';
 import 'package:newtest/utils/routes.dart';
 import 'package:newtest/widgets/theme.dart';
+import 'package:velocity_x/velocity_x.dart';
 import 'pages/home.dart';
 
 void main() {
-  runApp(const TestApp());
+  runApp(VxState(store: MyStore(),
+  child:  const TestApp()));
 }
 class TestApp extends StatelessWidget {
   const TestApp({Key? key}) : super(key: key);
