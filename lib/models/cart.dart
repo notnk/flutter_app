@@ -17,7 +17,7 @@ class CartModel {
   }
   //To get items in cart
   //List<Item> get items=> _itemIds.map((id) => _catalog.getById(id).toList());
-  Iterable get items=> _itemIds.map((id) => _catalog.getById(id));
+  List<Item> get items=> _itemIds.map((id) => _catalog.getById(id)).toList();
   //Get total Price
   num get totalPrice=>items.fold(0 , (total, current) => total+current.price);
   //add item
