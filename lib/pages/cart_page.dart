@@ -28,8 +28,7 @@ class CartPage extends StatelessWidget {
 }
 
 class _CartTotal extends StatelessWidget {
-  const _CartTotal({Key? key}) : super(key: key);
-
+  _CartTotal({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     final CartModel _cart=(VxState.store as MyStore).cart;
@@ -38,7 +37,15 @@ class _CartTotal extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          "\$${_cart.totalPrice}".text.xl5.color(context.theme.backgroundColor).make(),
+          VxConsumer(
+              mutations: const {RemoveMutation},
+              notifications: const {},
+              builder: (context,_)=>
+                return "\$${_cart.totalPrice}".text.xl5.
+                color(context.theme.backgroundColor).
+                make();
+              ,
+          ),
           30.widthBox,
           ElevatedButton(
             onPressed: (){
